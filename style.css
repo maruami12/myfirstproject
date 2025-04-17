@@ -1,0 +1,122 @@
+/* style.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #d0e2f2, #e1d6e8); /* პასტელური ლურჯი და იისფერი */
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 800px;
+    background-color: #f9f7f9; /* ღია პასტელური იასამნისფერი */
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    color: #6f42c1; /* პასტელური იისფერი */
+    font-weight: bold;
+  }
+  
+  .subtitle {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f5f5f5; /* ღია პასტელური ნაცრისფერი */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: translateY(-5px);
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #64b5f6; /* პასტელური ლურჯი */
+    border-bottom: 2px solid #bbdefb; /* ღია ლურჯი */
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-left: 5px solid #81c784; /* პასტელური მწვანე */
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  ul li:hover {
+    transform: scale(1.02);
+    background-color: #e8f5e9; /* პასტელური მწვანე */
+  }
+  
+  p {
+    line-height: 1.6;
+    font-size: 1.1em;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .background-art {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: radial-gradient(circle, rgba(0,0,255,0.1) 20%, transparent 20%),
+                      radial-gradient(circle, rgba(255,105,180,0.1) 20%, transparent 20%);
+    background-position: 0 0, 100px 100px;
+    background-size: 200px 200px;
+    animation: backgroundMove 15s linear infinite;
+  }
+  
+  @keyframes backgroundMove {
+    0% { background-position: 0 0, 100px 100px; }
+    100% { background-position: 200px 200px, 300px 300px; }
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
